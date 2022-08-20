@@ -13,7 +13,7 @@ const Works = () => {
           <div className="row mt-4 px-0 px-md-5 justify-content-center">
             {works.map((work, idx) => (
               <div
-                className="d-flex col-12 col-md-6 col-lg-4 mb-4"
+                className="d-flex col-12 col-md-6 col-lg-4 mb-5"
                 key={idx}
                 data-aos="zoom-in"
                 data-aos-delay={500 + idx * 100}
@@ -21,7 +21,7 @@ const Works = () => {
                 <div className="card">
                   <img
                     src={work.image}
-                    className="card-img-top"
+                    className="card-img-top img-fluid"
                     alt={work.title}
                   />
 

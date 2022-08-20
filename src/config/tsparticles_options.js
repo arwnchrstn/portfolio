@@ -5,7 +5,7 @@ export const options = Object.freeze({
       value: "#fff"
     }
   },
-  fpsLimit: 120,
+  fpsLimit: 60,
   interactivity: {
     detectOn: "canvas"
   },

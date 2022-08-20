@@ -25,14 +25,14 @@ const Banner = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox={`${
-            window.innerWidth < 576 ? "0 0 1440 500" : "0 0 1440 230"
+            window.innerWidth < 576 ? "0 0 1440 400" : "0 0 1440 230"
           }`}
           className="waves"
         >
           <path
             fill="#0D6EFD"
             fillOpacity="1"
-            d="M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,74.7C672,64,768,96,864,117.3C960,139,1056,149,1152,138.7C1248,128,1344,96,1392,80L1440,64L1440,500L1392,500C1344,500,1248,500,1152,500C1056,500,960,500,864,500C768,500,672,500,576,500C480,500,384,500,288,500C192,500,96,500,48,500L0,500Z"
+            d="M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,74.7C672,64,768,96,864,117.3C960,139,1056,149,1152,138.7C1248,128,1344,96,1392,80L1440,64L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z"
           ></path>
         </svg>
 
@@ -47,22 +47,24 @@ const Banner = () => {
                   Hi, <span className="text-primary">I am</span>
                 </h1>
                 <h3>Arwen Christian Ceres</h3>
-                <TypeAnimation
-                  sequence={[
-                    "Full Stack Web Developer",
-                    3000,
-                    "",
-                    500,
-                    "MERN Stack Developer",
-                    3000,
-                    "",
-                    500
-                  ]}
-                  wrapper="h4"
-                  repeat={Infinity}
-                  speed={70}
-                  className="text-primary fw-bold"
-                />
+                <div style={{ height: "50px" }}>
+                  <TypeAnimation
+                    sequence={[
+                      "Full Stack Web Developer",
+                      3000,
+                      "",
+                      500,
+                      "MERN Stack Developer",
+                      3000,
+                      "",
+                      500
+                    ]}
+                    wrapper="h4"
+                    repeat={Infinity}
+                    speed={70}
+                    className="text-primary fw-bold"
+                  />
+                </div>
 
                 <div className="mt-2">
                   <a

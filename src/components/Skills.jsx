@@ -21,7 +21,7 @@ const Skills = () => {
 
           <div
             className="skills-nav d-flex gap-3 justify-content-center mt-4"
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-delay="500"
           >
             <p
@@ -60,8 +60,8 @@ const Skills = () => {
 
           <div
             className="row justify-content-center mt-4"
-            data-aos="zoom-in"
-            data-aos-delay="1000"
+            data-aos="fade-right"
+            data-aos-delay="500"
           >
             <LayoutGroup>
               <motion.div
@@ -69,7 +69,7 @@ const Skills = () => {
                 layout
               >
                 <AnimatePresence>
-                  {filteredSkill.map((skill) => (
+                  {filteredSkill.map((skill, idx) => (
                     <motion.div
                       key={skill.id}
                       className="skill-card border border-2 rounded d-flex flex-column align-items-center py-3 px-2"
@@ -82,11 +82,12 @@ const Skills = () => {
                       <img
                         src={skill.image}
                         alt={skill.skill}
-                        className="img-fluid"
-                        style={{ width: "70%", aspectRatio: "1/1" }}
+                        className="img-fluid px-3"
                       />
 
-                      <h6 className="mt-auto fw-bold m-0">{skill.skill}</h6>
+                      <small className="mt-auto fw-bold m-0 text-center">
+                        {skill.skill}
+                      </small>
                     </motion.div>
                   ))}
                 </AnimatePresence>
