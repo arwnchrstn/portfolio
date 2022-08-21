@@ -30,26 +30,43 @@ const About = () => {
               data-aos="fade-left"
               data-aos-delay={500}
             >
-              <p className="text-justify">
-                I am <span className="text-primary">Arwen Christian Ceres</span>
+              <p className="lh-lg">
+                I am{" "}
+                <span className="text-primary fw-bold">
+                  Arwen Christian Ceres
+                </span>
                 , a fresh graduate of{" "}
-                <span className="text-primary">
+                <span className="text-primary fw-bold">
                   Bachelor of Science in Information Technology
                 </span>{" "}
                 from Polytechnic University of the Philippines Santa Rosa
                 Campus.
               </p>
 
-              <p className="text-justify">
-                I am knowledgable in Front End Development and have basic
-                knowledge in Back End Development but I am willing to be
-                training and willing to learn new things. I am currently looking
-                for entry level jobs that suits my skills and experience. I am
-                open for positions of
-                <span className="text-primary"> Web Developer</span>,
-                <span className="text-primary"> Front End Developer</span>,
-                <span className="text-primary"> Back End Developer</span>, and
-                <span className="text-primary">
+              <p className="lh-lg">
+                I am knowledgable in MERN Stack Development with JWT
+                Authentication but I am willing to be trained and willing to
+                learn new things. I am currently looking for{" "}
+                <span className="text-primary fw-bold">
+                  entry-level position
+                </span>{" "}
+                that suits my skills and experience. I am open for the positions
+                of
+                <span className="text-primary fw-bold">
+                  {" "}
+                  Front End Developer
+                </span>
+                ,
+                <span className="text-primary fw-bold">
+                  {" "}
+                  Back End Developer
+                </span>
+                <span className="text-primary fw-bold">
+                  {" "}
+                  Full Stack Web Developer
+                </span>
+                , or
+                <span className="text-primary fw-bold">
                   {" "}
                   Associate Software Engineer.
                 </span>

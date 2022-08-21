@@ -20,7 +20,7 @@ const Skills = () => {
           </h4>
 
           <div
-            className="skills-nav d-flex gap-3 justify-content-center mt-4"
+            className="skills-nav d-flex flex-wrap gap-3 justify-content-center mt-4"
             data-aos="fade-left"
             data-aos-delay="500"
           >
@@ -65,7 +65,7 @@ const Skills = () => {
           >
             <LayoutGroup>
               <motion.div
-                className="col-12 col-md-9 d-flex gap-3 flex-wrap justify-content-center"
+                className="col-12 col-md-10 d-flex gap-3 flex-wrap justify-content-center"
                 layout
               >
                 <AnimatePresence>

@@ -1,11 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import contact from "../assets/contact.png";
 import { BsLinkedin, BsFacebook, BsGithub } from "react-icons/bs";
-import { MdAlternateEmail } from "react-icons/md";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const [isSending, setIsSending] = useState(false);
+
+  const successEmail = () =>
+    toast.success("Your message was sent. Thank you for reaching out.", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined
+    });
+
+  const errorEmail = () =>
+    toast.error("An error occurred while sending your message.", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined
+    });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAIL_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          setIsSending(false);
+          successEmail();
+          e.target.reset();
+        },
+        (error) => {
+          errorEmail();
+          console.error(error.text);
+        }
+      );
+  };
   return (
     <>
+      <ToastContainer theme="colored" />
+
       <section className="contact" id="contact-section">
         <div className="container">
           <h4 className="text-center fw-bold text-primary" data-aos="fade-down">
@@ -16,7 +67,7 @@ const Contact = () => {
             <div
               className="col-md-6 d-flex align-items-center justify-content-center d-none d-md-flex"
               data-aos="zoom-in"
-              data-aos-delay={1000}
+              data-aos-delay={500}
             >
               <img
                 src={contact}
@@ -26,11 +77,7 @@ const Contact = () => {
               />
             </div>
 
-            <div
-              className="col-md-6"
-              data-aos="fade-left"
-              data-aos-delay={1000}
-            >
+            <div className="col-md-6" data-aos="fade-left" data-aos-delay={500}>
               <a
                 href="https://www.linkedin.com/in/arwenceres/"
                 target="_blank"
@@ -38,16 +85,6 @@ const Contact = () => {
                 className="text-decoration-none fw-bold d-flex align-items-center"
               >
                 <BsLinkedin size={20} className="me-2" /> Arwen Christian Ceres
-              </a>
-
-              <a
-                href="mailto:ceres703@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none fw-bold d-flex align-items-center mt-2"
-              >
-                <MdAlternateEmail size={20} className="me-2" />{" "}
-                ceres703@gmail.com
               </a>
 
               <a
@@ -72,45 +109,58 @@ const Contact = () => {
                 <span className="hr-text fw-bold px-3">OR</span>
               </div>
 
-              <form onSubmit={(e) => e.preventDefault()}>
-                <input
-                  className="form-control"
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
+              <form onSubmit={sendEmail}>
+                <fieldset disabled={isSending}>
+                  <input
+                    className="form-control"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
 
-                <input
-                  className="form-control mt-2"
-                  type="text"
-                  name="name"
-                  placeholder="Your Email"
-                  required
-                />
+                  <input
+                    className="form-control mt-2"
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
 
-                <input
-                  className="form-control mt-2"
-                  type="text"
-                  name="name"
-                  placeholder="Email Subject (Optional)"
-                />
+                  <input
+                    className="form-control mt-2"
+                    type="text"
+                    name="subject"
+                    placeholder="Email Subject (Optional)"
+                  />
 
-                <textarea
-                  className="form-control mt-2"
-                  type="text"
-                  name="name"
-                  placeholder="Message"
-                  required
-                  rows={5}
-                />
+                  <textarea
+                    className="form-control mt-2"
+                    type="text"
+                    name="message"
+                    placeholder="Message"
+                    required
+                    rows={5}
+                  />
 
-                <button
-                  type="submit"
-                  className="btn btn-primary mt-4 form-control"
-                >
-                  Send Message
-                </button>
+                  <button
+                    type="submit"
+                    className="btn btn-primary mt-4 form-control"
+                  >
+                    {!isSending && "Send Message"}
+                    {isSending && (
+                      <>
+                        Sending...
+                        <div
+                          className="spinner-border spinner-border-sm ms-1"
+                          role="status"
+                        >
+                          <span className="visually-hidden">Loading...</span>
+                        </div>
+                      </>
+                    )}
+                  </button>
+                </fieldset>
               </form>
             </div>
           </div>

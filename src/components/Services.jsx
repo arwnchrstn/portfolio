@@ -50,9 +50,9 @@ const Services = () => {
               <BsServer size={30} className="mb-3" />
               <h5 className="fw-bold">Back End Development</h5>
               <p className="mt-3">
-                Creating and setup back end APIs, routes, and database models
-                using Express JS, Node JS, Mongo DB, and adding authentication
-                using JWT.
+                Creating and setup back end API endpoints, routes, and database
+                models using Express JS, Node JS, Mongo DB, and adding
+                authentication using JWT.
               </p>
             </div>
           </div>

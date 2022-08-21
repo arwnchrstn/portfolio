@@ -27,7 +27,7 @@ export const works = Object.freeze([
     live: "https://pokedex-arwnchrstn.vercel.app"
   },
   {
-    title: "Simple Listing App (Bayan Academy Training Final Project)",
+    title: "Simple Listing App (Bayan Academy Backend Training Final Project)",
     image: listing,
     tech_stack: [
       "MERN STACK",

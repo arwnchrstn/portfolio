@@ -13,6 +13,7 @@ import github from "../assets/github.webp";
 import postman from "../assets/postman.webp";
 import insomnia from "../assets/insomnia.webp";
 import vscode from "../assets/vscode.webp";
+import jwt from "../assets/jwt.webp";
 
 export const skills = Object.freeze([
   {
@@ -28,6 +29,12 @@ export const skills = Object.freeze([
     image: css
   },
   {
+    id: 3,
+    skill: "JAVASCRIPT",
+    category: "frontend",
+    image: js
+  },
+  {
     id: 6,
     skill: "NODE JS",
     category: "backend",
@@ -40,16 +47,10 @@ export const skills = Object.freeze([
     image: express
   },
   {
-    id: 8,
-    skill: "MONGO DB",
+    id: 16,
+    skill: "JWT",
     category: "backend",
-    image: mongo
-  },
-  {
-    id: 3,
-    skill: "JAVASCRIPT",
-    category: "frontend",
-    image: js
+    image: jwt
   },
   {
     id: 9,
@@ -62,6 +63,12 @@ export const skills = Object.freeze([
     skill: "PHP",
     category: "backend",
     image: php
+  },
+  {
+    id: 8,
+    skill: "MONGO DB",
+    category: "backend",
+    image: mongo
   },
   {
     id: 13,

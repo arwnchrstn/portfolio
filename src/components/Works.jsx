@@ -16,7 +16,7 @@ const Works = () => {
                 className="d-flex col-12 col-md-6 col-lg-4 mb-5"
                 key={idx}
                 data-aos="zoom-in"
-                data-aos-delay={500 + idx * 100}
+                data-aos-delay={200 + idx * 100}
               >
                 <div className="card">
                   <img
@@ -32,7 +32,7 @@ const Works = () => {
                       {work.tech_stack.map((tech, idx) => (
                         <small
                           key={idx}
-                          className="bg-primary text-white rounded px-3"
+                          className="bg-primary text-white rounded px-2"
                         >
                           {tech}
                         </small>

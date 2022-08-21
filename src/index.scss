@@ -162,7 +162,15 @@ footer {
   padding: 50px 30px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 360px) {
+  section.skills {
+    .skill-card {
+      width: 110px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
     top: 0;

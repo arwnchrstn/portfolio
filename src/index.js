@@ -14,11 +14,11 @@ const loader = (
     style={{ zIndex: 9999 }}
   >
     <div
-      class="spinner-grow text-primary "
+      className="spinner-grow text-primary "
       style={{ width: "6rem", height: "6rem" }}
       role="status"
     >
-      <span class="visually-hidden">Loading...</span>
+      <span className="visually-hidden">Loading...</span>
     </div>
   </div>
 );
