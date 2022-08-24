@@ -61,6 +61,7 @@ const About = () => {
                   {" "}
                   Back End Developer
                 </span>
+                ,
                 <span className="text-primary fw-bold">
                   {" "}
                   Full Stack Web Developer
