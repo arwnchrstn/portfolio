@@ -33,8 +33,8 @@ export const works = Object.freeze([
       "MERN STACK",
       "CONTEXT API",
       "AXIOS",
-      "POSITION STACK (GEOCODING API)",
-      "LEAFLET JS (MAP API)"
+      "POSITION STACK",
+      "LEAFLET JS"
     ],
     repo: "https://github.com/arwnchrstn/bayan-academy-backend-project",
     live: ""

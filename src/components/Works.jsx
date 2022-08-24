@@ -13,7 +13,7 @@ const Works = () => {
           <div className="row mt-4 px-0 px-md-5 justify-content-center">
             {works.map((work, idx) => (
               <div
-                className="d-flex col-12 col-md-6 col-lg-4 mb-5"
+                className="d-flex col-12 col-md-6 col-lg-4 mb-4"
                 key={idx}
                 data-aos="zoom-in"
                 data-aos-delay={200 + idx * 100}
@@ -26,13 +26,15 @@ const Works = () => {
                   />
 
                   <div className="card-body d-flex flex-column">
-                    <h6 className="card-title fw-bold">{work.title}</h6>
+                    <h6 className="card-title fw-bold text-center">
+                      {work.title}
+                    </h6>
 
-                    <div className="d-flex flex-wrap gap-2 mb-5 mt-1">
+                    <div className="d-flex flex-wrap gap-2 mb-5 mt-3">
                       {work.tech_stack.map((tech, idx) => (
                         <small
                           key={idx}
-                          className="bg-primary text-white rounded px-2"
+                          className="bg-primary text-white rounded px-3"
                         >
                           {tech}
                         </small>
@@ -44,16 +46,19 @@ const Works = () => {
                         href={work.live}
                         target="_blank"
                         rel="noreferrer"
-                        className="btn btn-sm btn-outline-primary form-control mt-auto"
                         role="button"
+                        className="btn btn-sm btn-primary form-control mt-auto fw-bold"
                         onFocus={(e) => e.target.blur()}
                       >
                         Live View
                       </a>
                     ) : (
-                      <p className="m-0 fw-bold text-center mt-2 mt-auto">
+                      <button
+                        className="btn btn-sm btn-primary form-control mt-auto fw-bold"
+                        disabled
+                      >
                         Live View Not Available
-                      </p>
+                      </button>
                     )}
 
                     {work.repo ? (
@@ -61,16 +66,19 @@ const Works = () => {
                         href={work.repo}
                         target="_blank"
                         rel="noreferrer"
-                        className="btn btn-sm btn-primary form-control mt-2"
+                        className="btn btn-sm btn-outline-primary form-control mt-2 fw-bold"
                         role="button"
                         onFocus={(e) => e.target.blur()}
                       >
                         View Source
                       </a>
                     ) : (
-                      <p className="m-0 fw-bold text-center mb-2">
+                      <button
+                        className="btn btn-sm btn-outline-primary form-control mt-2 fw-bold"
+                        disabled
+                      >
                         Source Not Available
-                      </p>
+                      </button>
                     )}
                   </div>
                 </div>

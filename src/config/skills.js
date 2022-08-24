@@ -12,7 +12,6 @@ import mysql from "../assets/mysql.webp";
 import github from "../assets/github.webp";
 import postman from "../assets/postman.webp";
 import insomnia from "../assets/insomnia.webp";
-import vscode from "../assets/vscode.webp";
 import jwt from "../assets/jwt.webp";
 
 export const skills = Object.freeze([
@@ -105,11 +104,5 @@ export const skills = Object.freeze([
     skill: "GITHUB",
     category: "other",
     image: github
-  },
-  {
-    id: 15,
-    skill: "VS CODE",
-    category: "other",
-    image: vscode
   }
 ]);
