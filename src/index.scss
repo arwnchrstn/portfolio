@@ -62,18 +62,18 @@ header {
       &.active {
         &:nth-child(1) {
           transform: rotate(35deg);
-          background-color: #fff;
+          background-color: #0d6efd;
           transition: 0.3s ease-out;
         }
         &:nth-child(2) {
           opacity: 0;
-          background-color: #fff;
+          background-color: #0d6efd;
           transition: 0.3s ease-out;
         }
 
         &:nth-child(3) {
           transform: rotate(-35deg);
-          background-color: #fff;
+          background-color: #0d6efd;
           transition: 0.3s ease-out;
         }
       }
