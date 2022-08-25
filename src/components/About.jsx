@@ -19,7 +19,7 @@ const About = () => {
                 src={about}
                 alt="about me"
                 className="img-fluid"
-                width="65%"
+                width="80%"
                 data-aos="zoom-in"
                 data-aos-delay={500}
               />
