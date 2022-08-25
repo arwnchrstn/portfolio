@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { options } from "../config/tsparticles_options";
 import developer from "../assets/banner.webp";
 import Particles from "react-tsparticles";
+import Wave from "react-wavify";
 import cv from "../cv/Arwen Christian Ceres - Updated CV.pdf";
 
 const Banner = () => {
@@ -23,19 +24,17 @@ const Banner = () => {
         />
 
         {/* Waves */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox={`${
-            window.innerWidth < 576 ? "0 0 1440 350" : "0 0 1440 230"
-          }`}
+        <Wave
+          fill="#0D6EFD"
+          paused={false}
+          options={{
+            height: 40,
+            amplitude: 10,
+            speed: 0.4,
+            points: 3
+          }}
           className="waves"
-        >
-          <path
-            fill="#0D6EFD"
-            fillOpacity="1"
-            d="M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,74.7C672,64,768,96,864,117.3C960,139,1056,149,1152,138.7C1248,128,1344,96,1392,80L1440,64L1440,350L1392,350C1344,350,1248,350,1152,350C1056,350,960,350,864,350C768,350,672,350,576,350C480,350,384,350,288,350C192,350,96,350,48,350L0,350Z"
-          ></path>
-        </svg>
+        />
 
         <div className="container d-flex flex-column justify-content-center h-100">
           <div className="row">
