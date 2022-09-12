@@ -23,20 +23,20 @@ export const works = Object.freeze([
       "CONTEXT API"
     ],
     repo: "https://github.com/arwnchrstn/simple-todo",
-    live: "https://simple-todo-arwnchrstn.vercel.app/"
+    live: "https://simple-todo-arwnchrstn.netlify.app/"
   },
   {
     title: "React JS Pokedex",
     image: pokedex,
     tech_stack: ["BOOTSTRAP", "REACT JS", "JAVASCRIPT", "CONTEXT API"],
     repo: "https://github.com/arwnchrstn/simple-pokedex",
-    live: "https://pokedex-arwnchrstn.vercel.app"
+    live: "https://pokedex-arwnchrstn.netlify.app/"
   },
   {
     title: "Simple Listing App (Bayan Academy Backend Training Final Project)",
     image: listing,
     tech_stack: ["MERN STACK", "POSITION STACK", "LEAFLET JS", "CONTEXT API"],
     repo: "https://github.com/arwnchrstn/bayan-academy-backend-project",
-    live: ""
+    live: "https://bayan-simple-listing.netlify.app/"
   }
 ]);
