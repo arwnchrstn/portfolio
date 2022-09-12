@@ -30,7 +30,7 @@ export const options = Object.freeze({
         default: "bounce"
       },
       random: false,
-      speed: 4,
+      speed: 2,
       straight: false
     },
     number: {

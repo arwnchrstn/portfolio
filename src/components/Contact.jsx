@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import contact from "../assets/contact.webp";
+
 import { BsLinkedin, BsFacebook, BsGithub } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import contact from "../assets/contact.webp";
 
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);

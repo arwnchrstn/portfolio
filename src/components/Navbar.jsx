@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import { IoPersonCircle } from "react-icons/io5";
 
 const Navbar = () => {

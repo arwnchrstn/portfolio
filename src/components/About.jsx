@@ -1,4 +1,5 @@
 import React from "react";
+
 import about from "../assets/about_me.webp";
 
 const About = () => {
@@ -44,9 +45,8 @@ const About = () => {
               </p>
 
               <p className="lh-lg">
-                I am knowledgable in MERN Stack Development with JWT
-                Authentication but I am willing to be trained and willing to
-                learn new things. I am currently looking for{" "}
+                I am knowledgable in MERN Stack but I am willing to be trained
+                and willing to learn new things. I am currently looking for{" "}
                 <span className="text-primary fw-bold">
                   entry-level position
                 </span>{" "}
@@ -54,17 +54,17 @@ const About = () => {
                 of
                 <span className="text-primary fw-bold">
                   {" "}
-                  Front End Developer
-                </span>
-                ,
-                <span className="text-primary fw-bold">
-                  {" "}
                   Back End Developer
                 </span>
                 ,
                 <span className="text-primary fw-bold">
                   {" "}
-                  Full Stack Web Developer
+                  Front End Developer
+                </span>
+                ,
+                <span className="text-primary fw-bold">
+                  {" "}
+                  Full Stack Developer
                 </span>
                 , or
                 <span className="text-primary fw-bold">

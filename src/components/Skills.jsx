@@ -65,28 +65,24 @@ const Skills = () => {
           >
             <LayoutGroup>
               <motion.div
-                className="col-12 col-md-10 d-flex gap-3 flex-wrap justify-content-center"
+                className="col-12 col-md-10 d-flex flex-wrap justify-content-center"
                 layout
               >
                 <AnimatePresence>
                   {filteredSkill.map((skill, idx) => (
                     <motion.div
                       key={skill.id}
-                      className="skill-card border border-2 rounded d-flex flex-column align-items-center py-3 px-2"
+                      className="skill-card border border-2 rounded d-flex flex-column align-items-center py-3 px-2 m-2"
                       variants={skillVariant}
                       initial="hidden"
                       animate="visible"
                       exit="exit"
                       layout
                     >
-                      <img
-                        src={skill.image}
-                        alt={skill.skill}
-                        className="img-fluid px-3"
-                      />
+                      <skill.image size="65%" className="text-primary" />
 
                       <small className="mt-auto fw-bold m-0 text-center">
-                        {skill.skill}
+                        <small>{skill.skill}</small>
                       </small>
                     </motion.div>
                   ))}

@@ -93,13 +93,6 @@ section.banner {
     height: 95%;
     z-index: -999;
   }
-
-  .waves {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-  }
 }
 
 section.about {
@@ -113,7 +106,7 @@ section.services {
 }
 
 section.skills {
-  min-height: 80vh;
+  min-height: 75vh;
   padding: 50px 30px;
   scroll-margin-top: 70px;
 
@@ -127,8 +120,14 @@ section.skills {
   }
 
   .skill-card {
-    width: 130px;
+    width: 120px;
     aspect-ratio: 3/4;
+    transition: scale 0.3s ease-out;
+
+    &:hover {
+      scale: 1.05;
+      transition: scale 0.3s ease-out;
+    }
   }
 }
 
@@ -162,18 +161,10 @@ footer {
   padding: 50px 30px;
 }
 
-@media screen and (max-width: 360px), (max-height: 430px) {
-  section.banner {
-    .waves {
-      display: none !important;
-    }
-  }
-}
-
 @media screen and (max-width: 360px) {
   section.skills {
     .skill-card {
-      width: 110px;
+      width: 100px;
     }
   }
 }

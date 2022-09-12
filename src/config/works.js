@@ -9,7 +9,7 @@ export const works = Object.freeze([
       "Online Certificate Request with Management System for Barangay Bigaa (Capstone Project)",
     image: capstone,
     tech_stack: ["HTML", "CSS", "BOOTSTRAP", "PHP", "JAVASCRIPT", "MY SQL"],
-    repo: "",
+    repo: "https://github.com/arwnchrstn/capstone-project",
     live: ""
   },
   {
@@ -28,20 +28,14 @@ export const works = Object.freeze([
   {
     title: "React JS Pokedex",
     image: pokedex,
-    tech_stack: ["BOOTSTRAP", "JAVASCRIPT", "REACT JS", "CONTEXT API", "AXIOS"],
+    tech_stack: ["BOOTSTRAP", "REACT JS", "JAVASCRIPT", "CONTEXT API"],
     repo: "https://github.com/arwnchrstn/simple-pokedex",
     live: "https://pokedex-arwnchrstn.vercel.app"
   },
   {
     title: "Simple Listing App (Bayan Academy Backend Training Final Project)",
     image: listing,
-    tech_stack: [
-      "MERN STACK",
-      "CONTEXT API",
-      "AXIOS",
-      "POSITION STACK",
-      "LEAFLET JS"
-    ],
+    tech_stack: ["MERN STACK", "POSITION STACK", "LEAFLET JS", "CONTEXT API"],
     repo: "https://github.com/arwnchrstn/bayan-academy-backend-project",
     live: ""
   }

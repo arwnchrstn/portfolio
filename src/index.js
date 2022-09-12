@@ -1,12 +1,13 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
+
 import "./index.scss";
 import "aos/dist/aos.css";
 import Aos from "aos";
-Aos.init({ duration: 600, easing: "ease-out", once: true });
-const App = React.lazy(() => import("./App"));
 
+Aos.init({ duration: 600, easing: "ease-out", once: true });
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const App = React.lazy(() => import("./App"));
 
 const loader = (
   <div

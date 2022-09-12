@@ -1,108 +1,118 @@
-import html from "../assets/html.webp";
-import css from "../assets/css.webp";
-import js from "../assets/js.webp";
-import bootstrap from "../assets/bootstrap.webp";
-import react from "../assets/react.webp";
-import node from "../assets/node.webp";
-import express from "../assets/express.webp";
-import rest from "../assets/rest.webp";
-import mongo from "../assets/mongo.webp";
-import php from "../assets/php.webp";
-import mysql from "../assets/mysql.webp";
-import github from "../assets/github.webp";
-import postman from "../assets/postman.webp";
-import insomnia from "../assets/insomnia.webp";
-import jwt from "../assets/jwt.webp";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiNodedotjs,
+  SiExpress,
+  SiJsonwebtokens,
+  SiPhp,
+  SiMongodb,
+  SiPostman,
+  SiInsomnia,
+  SiBootstrap,
+  SiReact,
+  SiMysql,
+  SiGithub,
+  SiRedux
+} from "react-icons/si";
+
+import { TbApi } from "react-icons/tb";
 
 export const skills = Object.freeze([
   {
     id: 1,
     skill: "HTML",
     category: "frontend",
-    image: html
+    image: SiHtml5
   },
   {
     id: 2,
     skill: "CSS",
     category: "frontend",
-    image: css
+    image: SiCss3
   },
   {
     id: 3,
     skill: "JAVASCRIPT",
     category: "frontend",
-    image: js
+    image: SiJavascript
   },
   {
     id: 6,
     skill: "NODE JS",
     category: "backend",
-    image: node
+    image: SiNodedotjs
   },
   {
     id: 7,
     skill: "EXPRESS JS",
     category: "backend",
-    image: express
+    image: SiExpress
   },
   {
     id: 16,
     skill: "JWT",
     category: "backend",
-    image: jwt
+    image: SiJsonwebtokens
   },
   {
     id: 9,
     skill: "RESTFUL API",
     category: "backend",
-    image: rest
+    image: TbApi
   },
   {
     id: 10,
     skill: "PHP",
     category: "backend",
-    image: php
+    image: SiPhp
   },
   {
     id: 8,
     skill: "MONGO DB",
     category: "backend",
-    image: mongo
+    image: SiMongodb
   },
   {
     id: 13,
     skill: "POSTMAN",
     category: "other",
-    image: postman
+    image: SiPostman
   },
   {
     id: 14,
     skill: "INSOMNIA",
     category: "other",
-    image: insomnia
+    image: SiInsomnia
   },
   {
     id: 4,
     skill: "BOOTSTRAP",
     category: "frontend",
-    image: bootstrap
+    image: SiBootstrap
   },
   {
     id: 5,
     skill: "REACT JS",
     category: "frontend",
-    image: react
+    image: SiReact
   },
   {
     id: 11,
     skill: "MY SQL",
     category: "backend",
-    image: mysql
+    image: SiMysql
   },
   {
     id: 12,
     skill: "GITHUB",
     category: "other",
-    image: github
+    image: SiGithub
+  },
+  {
+    id: 17,
+    skill: "REDUX TOOLKIT",
+    category: "frontend",
+    image: SiRedux
   }
 ]);
