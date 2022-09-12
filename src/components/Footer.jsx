@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { BsLinkedin, BsFacebook, BsGithub } from "react-icons/bs";
+import countapi from "countapi-js";
 
 const Jumbotron = () => {
+  const [pageVisits, setPageVisits] = useState(undefined);
+
+  useEffect(() => {
+    countapi
+      .hit(
+        process.env.REACT_APP_COUNTAPI_NAMESPACE,
+        process.env.REACT_APP_COUNTAPI_KEY
+      )
+      .then((result) => setPageVisits(result.value));
+  }, []);
+
   return (
     <>
       <footer className="bg-primary">
@@ -41,6 +53,9 @@ const Jumbotron = () => {
               </div>
               <p className="m-0">
                 &copy; {new Date().getFullYear()} Arwen Christian Ceres
+              </p>
+              <p className="m-0 mt-4 fw-bold">
+                Total Page Visits: {pageVisits}
               </p>
             </div>
           </div>
