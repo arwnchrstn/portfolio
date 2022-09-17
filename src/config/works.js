@@ -2,6 +2,7 @@ import capstone from "../assets/capstone.webp";
 import todo from "../assets/todo.webp";
 import pokedex from "../assets/pokedex.webp";
 import listing from "../assets/listing.webp";
+import takatask from "../assets/takatask.webp";
 
 export const works = Object.freeze([
   {
@@ -11,6 +12,26 @@ export const works = Object.freeze([
     tech_stack: ["HTML", "CSS", "BOOTSTRAP", "PHP", "JAVASCRIPT", "MY SQL"],
     repo: "https://github.com/arwnchrstn/capstone-project",
     live: ""
+  },
+  {
+    title: "TakaTask: A simple task tracker app",
+    image: takatask,
+    tech_stack: [
+      "MERN STACK",
+      "BOOTSTRAP",
+      "REDUX TOOLKIT",
+      "NODE MAILER",
+      "FRAMER MOTION"
+    ],
+    repo: "https://github.com/arwnchrstn/task-tracker-app",
+    live: "https://takatask.onrender.com"
+  },
+  {
+    title: "React JS Pokedex",
+    image: pokedex,
+    tech_stack: ["BOOTSTRAP", "REACT JS", "JAVASCRIPT", "CONTEXT API"],
+    repo: "https://github.com/arwnchrstn/simple-pokedex",
+    live: "https://pokedex-arwnchrstn.netlify.app/"
   },
   {
     title: "Simple Todo List",
@@ -24,13 +45,6 @@ export const works = Object.freeze([
     ],
     repo: "https://github.com/arwnchrstn/simple-todo",
     live: "https://simple-todo-arwnchrstn.netlify.app/"
-  },
-  {
-    title: "React JS Pokedex",
-    image: pokedex,
-    tech_stack: ["BOOTSTRAP", "REACT JS", "JAVASCRIPT", "CONTEXT API"],
-    repo: "https://github.com/arwnchrstn/simple-pokedex",
-    live: "https://pokedex-arwnchrstn.netlify.app/"
   },
   {
     title: "Simple Listing App (Bayan Academy Backend Training Final Project)",

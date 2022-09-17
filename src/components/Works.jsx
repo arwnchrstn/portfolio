@@ -22,7 +22,7 @@ const Works = () => {
                 <div className="card">
                   <img
                     src={work.image}
-                    className="card-img-top img-fluid"
+                    className="card-img-top img-fluid border-bottom border-1"
                     alt={work.title}
                   />
 
@@ -31,7 +31,7 @@ const Works = () => {
                       {work.title}
                     </h6>
 
-                    <div className="d-flex flex-wrap gap-2 mb-5 mt-3">
+                    <div className="d-flex flex-wrap gap-2 mb-5 mt-3 justify-content-center">
                       {work.tech_stack.map((tech, idx) => (
                         <small
                           key={idx}

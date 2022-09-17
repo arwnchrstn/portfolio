@@ -62,6 +62,18 @@ export const skills = Object.freeze([
     image: TbApi
   },
   {
+    id: 5,
+    skill: "REACT JS",
+    category: "frontend",
+    image: SiReact
+  },
+  {
+    id: 17,
+    skill: "REDUX TOOLKIT",
+    category: "frontend",
+    image: SiRedux
+  },
+  {
     id: 10,
     skill: "PHP",
     category: "backend",
@@ -92,12 +104,6 @@ export const skills = Object.freeze([
     image: SiBootstrap
   },
   {
-    id: 5,
-    skill: "REACT JS",
-    category: "frontend",
-    image: SiReact
-  },
-  {
     id: 11,
     skill: "MY SQL",
     category: "backend",
@@ -108,11 +114,5 @@ export const skills = Object.freeze([
     skill: "GITHUB",
     category: "other",
     image: SiGithub
-  },
-  {
-    id: 17,
-    skill: "REDUX TOOLKIT",
-    category: "frontend",
-    image: SiRedux
   }
 ]);

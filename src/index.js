@@ -15,7 +15,7 @@ const loader = (
     style={{ zIndex: 9999 }}
   >
     <div
-      className="spinner-grow text-primary "
+      className="spinner-grow text-primary"
       style={{ width: "6rem", height: "6rem" }}
       role="status"
     >
