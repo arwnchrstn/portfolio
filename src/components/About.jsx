@@ -7,15 +7,15 @@ const About = () => {
     <>
       <section className="about" id="about-section">
         <div className="container">
-          <h4
-            className="text-center text-primary fw-bold section-heading"
+          <h3
+            className="text-center text-primary fw-bold section-heading mb-5"
             data-aos="fade-down"
           >
             ABOUT ME
-          </h4>
+          </h3>
 
           <div className="row mt-4">
-            <div className="col-md-6 d-flex justify-content-center align-items-center d-none d-md-flex">
+            <div className="col-lg-6 d-flex justify-content-center align-items-center d-none d-lg-flex">
               <img
                 src={about}
                 alt="about me"
@@ -27,7 +27,7 @@ const About = () => {
             </div>
 
             <div
-              className="col-md-6 d-flex flex-column justify-content-center"
+              className="col-lg-6 d-flex flex-column justify-content-center"
               data-aos="fade-left"
               data-aos-delay={500}
             >

@@ -27,10 +27,10 @@ const Banner = () => {
         <div className="container d-flex flex-column justify-content-center h-100">
           <div className="row">
             <div
-              className="col-md-6 d-flex flex-column justify-content-center"
+              className="col-lg-6 d-flex flex-column justify-content-center"
               data-aos="fade-down"
             >
-              <div className="align-self-center">
+              <div className="align-self-lg-center">
                 <h1 className="fw-bold">
                   Hi, <span className="text-primary">I am</span>
                 </h1>
@@ -84,7 +84,7 @@ const Banner = () => {
               </div>
             </div>
 
-            <div className="col-md-6 text-center mt-5 mt-md-0 d-none d-md-block">
+            <div className="col-lg-6 text-center mt-5 mt-md-0 d-none d-lg-block">
               <img
                 src={developer}
                 alt="web developer"

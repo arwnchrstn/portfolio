@@ -7,9 +7,12 @@ const Works = () => {
     <>
       <section className="works" id="works-section">
         <div className="container">
-          <h4 className="text-center text-primary fw-bold" data-aos="fade-down">
+          <h3
+            className="text-center text-primary fw-bold mb-5"
+            data-aos="fade-down"
+          >
             MY WORKS
-          </h4>
+          </h3>
 
           <div className="row mt-4 px-0 px-md-5 justify-content-center">
             {works.map((work, idx) => (
@@ -35,7 +38,8 @@ const Works = () => {
                       {work.tech_stack.map((tech, idx) => (
                         <small
                           key={idx}
-                          className="bg-primary text-white rounded px-3"
+                          className="bg-secondary bg-opacity-25 rounded px-3 fw-bold"
+                          style={{ fontSize: "12px" }}
                         >
                           {tech}
                         </small>

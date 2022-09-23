@@ -11,9 +11,9 @@ const Services = () => {
         id="services-section"
       >
         <div className="container my-auto">
-          <h4 className="text-center fw-bold" data-aos="fade-down">
+          <h3 className="text-center fw-bold" data-aos="fade-down mb-5">
             WHAT I DO
-          </h4>
+          </h3>
 
           <div className="row mt-5 gap-3 justify-content-center">
             <div

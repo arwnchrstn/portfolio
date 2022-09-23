@@ -61,13 +61,16 @@ const Contact = () => {
 
       <section className="contact" id="contact-section">
         <div className="container">
-          <h4 className="text-center fw-bold text-primary" data-aos="fade-down">
+          <h3
+            className="text-center fw-bold text-primary mb-5"
+            data-aos="fade-down"
+          >
             LET'S CONNECT
-          </h4>
+          </h3>
 
           <div className="row mt-4">
             <div
-              className="col-md-6 d-flex align-items-center justify-content-center d-none d-md-flex"
+              className="col-lg-6 d-flex align-items-center justify-content-center d-none d-lg-flex"
               data-aos="zoom-in"
               data-aos-delay={500}
             >
@@ -79,7 +82,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="col-md-6" data-aos="fade-left" data-aos-delay={500}>
+            <div className="col-lg-6" data-aos="fade-left" data-aos-delay={500}>
               <a
                 href="https://www.linkedin.com/in/arwenceres/"
                 target="_blank"

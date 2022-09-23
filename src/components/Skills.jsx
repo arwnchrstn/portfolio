@@ -12,12 +12,12 @@ const Skills = () => {
     <>
       <section className="skills" id="skills-section">
         <div className="container">
-          <h4
-            className="section-heading text-center text-primary fw-bold"
+          <h3
+            className="section-heading text-center text-primary fw-bold mb-5"
             data-aos="fade-down"
           >
             SKILLS AND KNOWLEDGE
-          </h4>
+          </h3>
 
           <div
             className="skills-nav d-flex flex-wrap gap-3 justify-content-center mt-4"
@@ -72,7 +72,7 @@ const Skills = () => {
                   {filteredSkill.map((skill, idx) => (
                     <motion.div
                       key={skill.id}
-                      className="skill-card border border-2 rounded d-flex flex-column align-items-center py-3 px-2 m-2"
+                      className="skill-card border border-2 rounded d-flex flex-column align-items-center py-3 px-2 m-2 rounded"
                       variants={skillVariant}
                       initial="hidden"
                       animate="visible"
