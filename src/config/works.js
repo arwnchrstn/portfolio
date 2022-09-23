@@ -3,6 +3,7 @@ import todo from "../assets/todo.webp";
 import pokedex from "../assets/pokedex.webp";
 import listing from "../assets/listing.webp";
 import takatask from "../assets/takatask.webp";
+import stopwatch from "../assets/stopwatch.webp";
 
 export const works = Object.freeze([
   {
@@ -52,5 +53,12 @@ export const works = Object.freeze([
     tech_stack: ["MERN STACK", "POSITION STACK", "LEAFLET JS", "CONTEXT API"],
     repo: "https://github.com/arwnchrstn/bayan-academy-backend-project",
     live: "https://bayan-simple-listing.netlify.app/"
+  },
+  {
+    title: "Stopwatch",
+    image: stopwatch,
+    tech_stack: ["REACT JS", "BOOTSTRAP", "FRAMER MOTION"],
+    repo: "https://github.com/arwnchrstn/stopwatch",
+    live: "https://stopwatch-arwnchrstn.netlify.app/"
   }
 ]);
