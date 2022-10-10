@@ -11,7 +11,7 @@ const Works = () => {
             className="text-center text-primary fw-bold mb-5"
             data-aos="fade-down"
           >
-            MY WORKS
+            PERSONAL WORKS
           </h3>
 
           <div className="row mt-4 px-0 px-md-5 justify-content-center">
