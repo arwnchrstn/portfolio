@@ -4,6 +4,7 @@ import pokedex from "../assets/pokedex.webp";
 import listing from "../assets/listing.webp";
 import takatask from "../assets/takatask.webp";
 import stopwatch from "../assets/stopwatch.webp";
+import expense from "../assets/expense.webp";
 
 export const works = Object.freeze([
   {
@@ -26,6 +27,13 @@ export const works = Object.freeze([
     ],
     repo: "https://github.com/arwnchrstn/task-tracker-app",
     live: "https://takatask.onrender.com"
+  },
+  {
+    title: "Expense Tracker",
+    image: expense,
+    tech_stack: ["MERN STACK", "BOOTSTRAP", "REDUX TOOLKIT"],
+    repo: "https://github.com/arwnchrstn/expense-tracker",
+    live: "https://expense-tracker-nbyj.onrender.com"
   },
   {
     title: "React JS Pokedex",
