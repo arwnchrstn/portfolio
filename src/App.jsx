@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
-    location.href = "https://arwnchrstn-v2.onrender.com";
+    window.location.href = "https://arwnchrstn-v2.onrender.com";
   }, []);
 
   return (
