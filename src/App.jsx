@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
@@ -10,10 +10,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  useEffect(() => {
-    window.location.href = "https://arwnchrstn-v2.onrender.com";
-  }, []);
-
   return (
     <>
       <Navbar />

@@ -5,13 +5,10 @@ import {
   SiNodedotjs,
   SiExpress,
   SiJsonwebtokens,
-  SiPhp,
   SiMongodb,
   SiPostman,
-  SiInsomnia,
   SiBootstrap,
   SiReact,
-  SiMysql,
   SiGithub,
   SiRedux
 } from "react-icons/si";
@@ -74,12 +71,6 @@ export const skills = Object.freeze([
     image: SiRedux
   },
   {
-    id: 10,
-    skill: "PHP",
-    category: "backend",
-    image: SiPhp
-  },
-  {
     id: 8,
     skill: "MONGO DB",
     category: "backend",
@@ -92,22 +83,10 @@ export const skills = Object.freeze([
     image: SiPostman
   },
   {
-    id: 14,
-    skill: "INSOMNIA",
-    category: "other",
-    image: SiInsomnia
-  },
-  {
     id: 4,
     skill: "BOOTSTRAP",
     category: "frontend",
     image: SiBootstrap
-  },
-  {
-    id: 11,
-    skill: "MY SQL",
-    category: "backend",
-    image: SiMysql
   },
   {
     id: 12,
